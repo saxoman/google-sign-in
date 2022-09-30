@@ -1,1 +1,8 @@
-<p>login works!</p>
+<div #logoutButton *ngIf="(user)" >
+  <p>dodati log-out</p>
+  <button (click)="logout()">Logout</button>
+</div>
+<div *ngIf="!(user)">
+  <div #loginButton id="buttonDiv"></div>
+</div>
+
